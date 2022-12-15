@@ -1,0 +1,9 @@
+#!/bin/bash
+num=$1
+sum=1
+until [[ $sum -gt 10 ]]
+do
+mul=$((num * sum))
+echo "$num x $sum = $mul"
+((sum++))
+done

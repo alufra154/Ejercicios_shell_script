@@ -1,0 +1,10 @@
+#!/bin/bash
+if test -e $1; then
+if [ -r $1 ]; then
+cat $1
+else
+echo "No hay permisos de lectura"
+fi
+else
+echo "El fichero no existe"
+fi

@@ -1,0 +1,9 @@
+#!/bin/bash
+num1=$1
+num2=$2
+if [ $# -ne 2 ]; then
+echo "No se han pasado 2 parametros, aqui un ejemplo "bash Ej2 3 5""
+else
+num=$((num1 + num2))
+echo $num
+fi

@@ -1,0 +1,11 @@
+#!/bin/bash
+if test -e $1; then
+if test -f $1; then
+echo "El fichero es regular"
+elif test -d $1; then
+echo "El fichero es un directorio"
+fi
+else
+echo "El fichero no extiste"
+fi
+
