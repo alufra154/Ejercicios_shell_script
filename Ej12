@@ -1,0 +1,42 @@
+#!/bin/bash
+echo -r "
+1-. Sumer
+2-. Restar
+3-. Multi
+4-. Div
+0-. Salir"
+read num
+
+case $num in
+1)
+echo -r "Num1"
+read num1
+echo -r "num2"
+read num2
+(( $num1 + $num2 = $res )); echo $res
+;;
+2)
+echo -r "Num1"
+read num1
+echo -r "num2
+read num2
+(($num1-$num2=$res))
+;;
+3)
+echo -r "Num1"
+read num1
+echo -r "num2
+read num2
+(($num1 * $num2 = $res))
+;;
+4)
+echo -r "Num1"
+read num1
+echo -r "num2
+read num2
+(($num1 / $num2 = $res))
+;;
+0)
+exit
+;;
+esac

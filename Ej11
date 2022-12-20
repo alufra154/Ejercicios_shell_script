@@ -1,0 +1,15 @@
+random=$(($RANDOM % 100 + 1 ))
+until [ $random -eq $num ]
+do
+echo -r "Introduce un numero: "
+read num
+if [ $random -eq $num ]; then
+echo "Enhorabuena"
+else
+if [ $random -gt $num ]; then
+echo "El numero es major"
+else
+echo "el numero es menor"
+fi
+fi
+done

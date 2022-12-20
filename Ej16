@@ -1,0 +1,4 @@
+#!/bin/bash
+dir=$1
+ls -l $1 | grep -c "^-"
+ls -l $1 | grep -c "^d"

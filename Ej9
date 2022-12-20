@@ -1,4 +1,4 @@
-echo -n "Numero: "
++echo -n "Numero: "
 read num
 
 if ((num % 2 == 0)); then

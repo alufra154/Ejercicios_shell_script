@@ -1,0 +1,31 @@
+echo -r "Que quieres hacer
+1-.Sumar
+2-.Restar
+3-.Multiplicar
+4-.Dividir
+0-.Salir"
+read num
+
+case $num in
+1)
+echo -r "Num1"
+read num1
+echo -r "Num2"
+read num2
+;;
+2)
+
+;;
+3)
+
+;; 
+4)
+
+;;
+0)
+
+;;
+echo -r "Num1"
+read num1
+echo -r "Num2"
+read num2

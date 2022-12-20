@@ -1,0 +1,11 @@
+#!/bin/bash
+if id "$1" &>/dev/null; then
+echo "El usuario existe"
+if who | grep -q $1; then
+echo "$1 esta loggeado"
+else
+echo "$1 no esta loggeado"
+fi
+else
+echo "No existe"
+fi

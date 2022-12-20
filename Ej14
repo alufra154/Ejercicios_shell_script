@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -r "Directorio"
+read dir
+
+ls -l $dir
+for entry in "$dir"/*; do
+
+((count++))
+done

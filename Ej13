@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -r "Numero"
+read num
+until [ $sum -eq 0 ]
+do
+echo -r "Numero"
+read sum
+num=$((sum + num))
+echo $num
+done
+echo "Fin"
