@@ -1,0 +1,19 @@
+#!/bin/bash
+apcor1="${$3:0:2}" ; echo "${apcor1}"
+apcor2="${$4:0:2}" ; echo "${apcor2}"
+nomcor="${$2:0:1}" ; echo "${nomcor}"
+if [ $# -eq 4 ]; then
+if [ $1 == alta ]; then
+useradd "alu${apcor1}${apcor2}${nomcor}"
+groupadd "alu${apcor1}${apcor2}${nomcor}"
+usermod -a -G "alu${apcor1}${apcor2}${nomcor}" "alu${apcor1}${apcor2}${nomcor}"
+elif [ $1 == baja ]; then
+userdel "alu${apcor1}${apcor2}${nomcor}"
+else
+echo "error"
+elif [ $# -eq 5 ]; then
+useradd "alu${apcor1}${apcor2}${nomcor}"
+usermod -g "alu${apcor1}${apcor2}${nomcor}" "alu${apcor1}${apcor2}${nomcor}"
+else
+echo "error"
+fi

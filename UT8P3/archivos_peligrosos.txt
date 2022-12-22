@@ -1,0 +1,6 @@
+lrwxrwxrwx   1 root root          8 nov 13  2020 sbin -> usr/sbin
+lrwxrwxrwx   1 root root         10 nov 13  2020 libx32 -> usr/libx32
+lrwxrwxrwx   1 root root          9 nov 13  2020 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root          9 nov 13  2020 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          7 nov 13  2020 lib -> usr/lib
+lrwxrwxrwx   1 root root          7 nov 13  2020 bin -> usr/bin
