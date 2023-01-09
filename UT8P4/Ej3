@@ -1,0 +1,3 @@
+#!/bin/bash
+arch=$(grep Hack * -lR)
+mv $arch /root/cuarentena

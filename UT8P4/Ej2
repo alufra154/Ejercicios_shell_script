@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then
+echo -r "Cuando quieres apagar el pc, ahora(0) o dentro de cuantos minutos:"
+read min
+shutdown -P +$min
+else
+shutdown -P +$1
+fi
+
